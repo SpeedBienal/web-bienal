@@ -1,0 +1,21 @@
+{
+  "name": "web-bienal",
+  "homepage": "https://github.com/SpeedBienal/web-bienal",
+  "authors": [
+    "Juan Manuel Cruz <cruz.jm.stafe@gmail.com>"
+  ],
+  "description": "web estatica para servir como fachada de la API de la bienal de arte joven",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4"
+  }
+}
