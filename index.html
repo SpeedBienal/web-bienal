@@ -13,15 +13,13 @@
 
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
-  <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
 
-
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> -->
 </head>
 
-<body>
+<body id="inicio">
 
   <div class="brand">Bienal Arte Joven</div>
   <div class="address-bar">Rectorado, UNL, siempre cerca de tu corazón</div>
@@ -30,7 +28,7 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+      <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -43,11 +41,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#informacion">Información</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="page-scroll" href="#inicio">Inicio</a></li>
+          <li><a class="page-scroll" href="#agenda">Agenda</a></li>
+          <li><a class="page-scroll" href="#galeria">Galería</a></li>
+          <li><a class="page-scroll" href="#informacion">Información</a></li>
+          <li><a class="page-scroll" href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -171,50 +169,8 @@
     </div>
   </footer>
 
-  <!-- jQuery -->
-  <script src="lib/jquery/dist/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-
-  <!-- Script to Activate the Carousel -->
-  <script>
-  $('.carousel').carousel({
-    interval: 3000 //changes the speed
-  })
-  </script>
-  <script>
-     function initMap() {
-       var myLatLng_rectorado = new google.maps.LatLng(-31.6349758,-60.7048152);
-       var myLatLng_foro = new google.maps.LatLng(-31.6505956,-60.7099174);
-
-       var map1 = new google.maps.Map(document.getElementById('map1'), {
-         zoom: 15,
-         disableDefaultUI: true,
-         scrollwheel: false,
-         center: myLatLng_rectorado
-       });
-
-       var map2 = new google.maps.Map( document.getElementById('map2'), {
-         zoom: 15,
-         disableDefaultUI: true,
-         scrollwheel: false,
-         center: myLatLng_foro
-       });
-
-       var marker_rectorado = new google.maps.Marker({
-         position: myLatLng_rectorado,
-         map: map1,
-         title: 'Rectorado UNL'
-       });
-       var marker_foro = new google.maps.Marker({
-         position: myLatLng_foro,
-         map: map2,
-         title: 'Foro Cultural UNL'
-       });
-     }
-   </script>
-   <script async defer
+  <script src="js/bundle.js"></script>
+  <script async defer
  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7YGS5YL3Sits9Tsx3PPpI5H3S3s-SY_A&callback=initMap"></script>
 
 </body>
