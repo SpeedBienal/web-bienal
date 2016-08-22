@@ -31,9 +31,23 @@ hr {
     border-color: #999;
 }
 
+section {
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 100px 0;
+  }
+}
+
 .brand,
 .address-bar {
     display: none;
+}
+
+.margin-navbar {
+    padding-top:80px;
 }
 
 .navbar-brand {
@@ -105,7 +119,16 @@ hr {
 }
 
 footer {
-    background: rgba(255,255,255,0.9);
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   background:transparent;
+}
+
+footer img{
+   width:100%;
+   background:transparent;
 }
 
 footer p {
@@ -196,3 +219,42 @@ footer p {
 .map {
         height: 300px;
       }
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  background-color: #393e80;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a.musica-theme:hover,
+ul.social-buttons li a.musica-theme:focus,
+ul.social-buttons li a.musica-theme:active {
+  background-color: #F8B451;
+}
+ul.social-buttons li a.escenicas-theme:hover,
+ul.social-buttons li a.escenicas-theme:focus,
+ul.social-buttons li a.escenicas-theme:active {
+  background-color: #EA5A57;
+}
+ul.social-buttons li a.letras-theme:hover,
+ul.social-buttons li a.letras-theme:focus,
+ul.social-buttons li a.letras-theme:active {
+  background-color: #00A880;
+}
+ul.social-buttons li a.audiovisuales-theme:hover,
+ul.social-buttons li a.audiovisuales-theme:focus,
+ul.social-buttons li a.audiovisuales-theme:active {
+  background-color: #ED7635;
+}

@@ -8,24 +8,19 @@
   <meta name="description" content="">
   <meta name="author" content="Malows">
 
-
   <title>12° Bienal Arte Joven</title>
 
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
-
   <link href="css/stylesheet.css" rel="stylesheet">
 
-  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> -->
 </head>
 
 <body id="inicio">
-
   <div class="brand">Bienal Arte Joven</div>
   <div class="address-bar">Rectorado, UNL, siempre cerca de tu corazón</div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
+  <nav id=barra-navegadora class="navbar navbar-default" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -53,9 +48,9 @@
     <!-- /.container -->
   </nav>
 
-  <div class="container">
+  <div id="contenido" class="container">
 
-    <div class="row">
+    <section class="row">
       <div class="box col-md-10 col-sm-12 col-md-offset-1 text-center">
         <div id="carousel-example-generic" class="carousel slide">
           <!-- Indicators -->
@@ -105,46 +100,54 @@
           </small>
         </h2>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
+    <section id="agenda" class="row">
       <div class="box col-md-10 col-sm-12 col-md-offset-1">
         <hr>
-        <h2 id="agenda" class="intro-text text-center"><strong>Agenda</strong></h2>
+        <h2 class="intro-text text-center"><strong>Agenda</strong></h2>
         <hr>
         <img class="img-responsive img-right" src="img/imagen-pantalla1.png">
         <hr class="visible-xs">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
       </div>
-    </div>
-    <div class="row">
+    </section>
+    <section id="galeria" class="row">
       <div class="box col-md-10 col-sm-12 col-md-offset-1">
         <hr>
-        <h2 id="galeria" class="intro-text text-center"><strong>Galeria</strong></h2>
+        <h2 class="intro-text text-center"><strong>Galeria</strong></h2>
         <hr>
         <img class="img-responsive img-left" src="img/imagen2-pantalla1.png">
         <hr class="visible-xs">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
       </div>
-    </div>
-    <div class="row">
+    </section>
+    <section id="informacion" class="row">
       <div class="box col-md-10 col-sm-12 col-md-offset-1">
         <hr>
-        <h2 id="informacion" class="intro-text text-center"><strong>Información</strong></h2>
+        <h2 class="intro-text text-center"><strong>Información</strong></h2>
         <hr>
         <img class="img-responsive img-right" src="img/imagen3-pantalla1.png" alt="">
         <hr class="visible-xs">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
+    <section id="contacto" class="row">
       <div class="box col-md-10 col-sm-12 col-md-offset-1">
         <hr>
-        <h2 id="contacto" class="intro-text text-center">información de <strong>contacto</strong>
+        <h2 class="intro-text text-center">información de <strong>contacto</strong>
         </h2>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-6">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/SoyBienal" data-widget-id="763624566107275264">Tweets sobre #SoyBienal</a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            FACEBOOK BADGE PLACEHOLDER
+          </div>
+        </div>
         <div class="row text-center">
           <div class="col-sm-12 col-md-6">
             <label>Rectorado UNL</label>
@@ -155,23 +158,41 @@
             <div id="map2" class="map"></div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.container -->
-  <footer>
-    <div class="container">
-      <div class="box col-md-10 col-sm-12 col-md-offset-1">
-        <div class="text-center">
-          <img class="img-responsive" src="img/pie-de-pagina2.png">
+        <hr>
+        <h2 class="intro-text text-center">Seguinos en nuestras <strong>Redes Sociales</strong></h2>
+        <hr>
+        <div class="row text-center social-buttons">
+          <ul class="list-inline social-buttons">
+              <li><a class="musica-theme" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="escenicas-theme" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="audiovisuales-theme" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="letras-theme" href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
         </div>
       </div>
+    </section>
+  </div>
+  <!-- /.container -->
+
+  <!-- Botón que lleva a ver votación -->
+  <nav class="navbar navbar-fixed-bottom">
+    <div class="container-fluid">
+      <a href="file:///home/juan/Programacion/hackathon/web-bienal/votacion.html" class="btn btn-lg btn-success navbar-btn navbar-right" style="margin-right: 0.5em;">Ver Votación</a>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="container">
+      <img class="img-responsive col-xs-12" src="img/pie-de-pagina-juan.png">
     </div>
   </footer>
 
   <script src="js/bundle.js"></script>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
   <script async defer
- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7YGS5YL3Sits9Tsx3PPpI5H3S3s-SY_A&callback=initMap"></script>
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7YGS5YL3Sits9Tsx3PPpI5H3S3s-SY_A&callback=initMap"></script>
 
 </body>
 

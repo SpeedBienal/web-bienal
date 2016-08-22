@@ -66,7 +66,12 @@ gulp.task('pack-js', ['clean-js'], function () {
     });
 
 gulp.task('pack-css', ['clean-css'], function () {
-    return gulp.src(['lib/bootstrap/dist/css/bootstrap.css' ,'css/style.css', 'css/roboto.css', 'css/roboto_condensed.css'])
+    return gulp.src([
+      'lib/bootstrap/dist/css/bootstrap.min.css',
+      'lib/font-awesome/css/font-awesome.min.css',
+      'css/style.css',
+      'css/roboto.css',
+      'css/roboto_condensed.css'])
         .pipe(concat('stylesheet.css'))
         .pipe(nano())
         .pipe(cleanCss())

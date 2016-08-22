@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SpeedBienal/web-bienal#readme",
   "dependencies": {
+    "angular-chart.js": "^1.0.1",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",

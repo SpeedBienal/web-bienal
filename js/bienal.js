@@ -5,6 +5,22 @@ $('.carousel').carousel({
   interval: 3000 //changes the speed
 });
 
+$(function () {
+    var menu = $('#barra-navegadora');
+    var origOffsetY = menu.offset().top;// + menu.height();
+
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY ) {
+            $('#barra-navegadora').addClass('navbar-fixed-top');
+            //$('.contenido, .agenda').addClass('margin-navbar');
+        } else {
+            $('#barra-navegadora').removeClass('navbar-fixed-top');
+            //$('.contenido, .agenda').removeClass('margin-navbar');
+        }
+    }
+    document.onscroll = scroll;
+});
+
  function initMap() {
    var myLatLng_rectorado = new google.maps.LatLng(-31.6349758,-60.7048152);
    var myLatLng_foro = new google.maps.LatLng(-31.6505956,-60.7099174);
