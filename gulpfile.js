@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 
 //var uncss = require('gulp-uncss');
-var sass = require('gulp-sass');
 var nano = require('gulp-cssnano');
 var cleanCss = require('gulp-clean-css');
 

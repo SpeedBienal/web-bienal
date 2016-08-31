@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg.png') no-repeat center center fixed;
@@ -23,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
     font-size: 1.25em;
     line-height: 1.6;
-    color: #000;
+    color: #222;
 }
 
 hr {
@@ -257,4 +251,15 @@ ul.social-buttons li a.audiovisuales-theme:hover,
 ul.social-buttons li a.audiovisuales-theme:focus,
 ul.social-buttons li a.audiovisuales-theme:active {
   background-color: #ED7635;
+}
+
+.responsive-iframe {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.responsive-iframe iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
